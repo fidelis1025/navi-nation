@@ -11,8 +11,8 @@ function toggleNav() {
     overlay.classList.toggle('overlay-active')
 
     if (overlay.classList.contains('overlay-active')) {
-        overlay.classList.remove('overlay-slide-left')
-        overlay.classList.add('overlay-slide-right')
+
+        overlay.classList.replace('overlay-slide-left', 'overlay-slide-right')
 
         nav1.classList.remove('slide-out-1')
         nav1.classList.add('slide-in-1')
@@ -30,8 +30,8 @@ function toggleNav() {
         nav5.classList.add('slide-in-5')
         
     } else {
-        overlay.classList.remove('overlay-slide-right')
-        overlay.classList.add('overlay-slide-left')
+
+        overlay.classList.replace('overlay-slide-right', 'overlay-slide-left')
 
         nav1.classList.remove('slide-in-1')
         nav1.classList.add('slide-out-1')
